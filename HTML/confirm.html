@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm alert</title>
+</head>
+<body>
+    <h1>Ankit Shukla Learn Python</h1>
+    <button onclick='del()'>Change Name</button>
+    <!-- <h1> Document Using Confirm alert </h1> -->
+</body>
+</html>
+    <script>
+          function del() {
+            var a = confirm('Are You Sure You Want to Change in Document')
+            if(a==true){
+               document.getElementsByTagName('h1')[0].innerText="Shukla Learn Python"
+            }
+            else{
+               document.getElementsByTagName('h1')[0].innerText="Ankit Shukla Learn Python"
+            }
+        }
+    
+    //    var a = confirm('Are You Sure You Want to Change in Document')
+    //    if(a==true){
+    //     document.getElementsByTagName('h1')[0].innerText="Change Succesfully"
+    //    }
+    </script>
