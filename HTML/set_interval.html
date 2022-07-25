@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Set_Interval</title>
+</head>
+<body>
+    <h1>Javascript Set_Interval</h1>
+    <button onclick="change_password">change_name</button>
+    <h2 id="p"></h2>
+</body>
+
+<script>
+    function change_password(){
+        var data = prompt('Enter your name :- ')
+        setInterval(function ()  {
+            document.getElementById('p').innerText = 'Password change'
+
+        }, 1000);
+    }
+    console.log(change_password)
+</script>
+
+</html>
