@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../JAVASCRIPT/Dom_Dom.js">
+</head>
+<style>
+    .container{
+        display: flex;
+        background-color: aquamarine;
+        margin:  3px 0;
+        padding: 5rem;
+    }
+    .bg-color{
+        background-color: chartreuse;
+    }
+</style>
+<body>
+    <h1>HY MY NAME IS ANKIT SHUKLA</h1>
+    
+     <div id="click" class="container">
+        <button id="click">Click_Me</button>
+     </div>
+
+     <div class="container">
+        <p>This Is Shukla Hub</p>
+     </div>
+
+    <script>
+        // DOM MANIPULATION
+        let elem = document.getElementById('click');
+        console.log(elem) 
+
+        let elemClass = document.getElementsByClassName('container')
+        console.log(elemClass)
+        // elemClass[0].style.background = "yellow";
+        elemClass[0].classList.add("bg-color")
+
+        div = document.getElementsByTagName('div')
+        console.log(div)
+
+        // SELECTING USING QUERY
+
+        sel = document.querySelector('.container')
+        console.log(sel)
+        sel = document.querySelectorAll('.container')
+        console.log(sel)
+
+    </script>
+</body>
+</html>
